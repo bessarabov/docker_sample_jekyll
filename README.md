@@ -15,7 +15,8 @@ There is a magic line in Dockerfile:
 
     VOLUME ["/data", "/var/www/html"]
 
-To server this data via web server we need one more container
+To server this data via web server we need one more container.
+https://github.com/bessarabov/docker_sample_jekyll_server
 
     docker run --volumes-from jj --publish 3000:3000 jekyll_server
 
